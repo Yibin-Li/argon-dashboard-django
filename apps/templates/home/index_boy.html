@@ -1,0 +1,315 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Dashboard {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %} {% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+             <!--  <h6 class="h2 text-white d-inline-block mb-0">Default</h6> -->
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                  <!-- li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Default</li> -->
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">May Smith</h3>
+                </div>
+                <div class="col text-right">
+                  <a href="/immunization.html" class="btn btn-sm btn-primary">Immunizations</a>
+                </div>
+                <div class="col text-right">
+                  <a href="/lab_result.html" class="btn btn-sm btn-primary">Lab Results</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-20 col-xl-15 text-center">
+                  <a href="/index_mom.html" type="button" class="btn-icon-clipboard"  data-clipboard-text="air-baloon" title="Show Profile">
+                    <div>
+                      <img src="/static/assets/img/mom.png" class="col-center">
+                    </div>
+                  </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Robbie Smith</h3>
+                </div>
+                <div class="col text-right">
+                  <a href="/immunization.html" class="btn btn-sm btn-primary">Immunizations</a>
+                </div>
+                <div class="col text-right">
+                  <a href="/lab_result.html" class="btn btn-sm btn-primary">Lab Results</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-20 col-xl-15 text-center">
+                  <a href="/index_boy.html"  type="button" class="btn-icon-clipboard"  data-clipboard-text="air-baloon" title="Show Profile">
+                    <div>
+                      <img src="/static/assets/img/boy.png" class="col-center">
+                    </div>
+                  </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Emma Smith</h3>
+                </div>
+                <div class="col text-right">
+                  <a href="/immunization.html" class="btn btn-sm btn-primary">Immunizations</a>
+                </div>
+                <div class="col text-right">
+                  <a href="/lab_result.html" class="btn btn-sm btn-primary">Lab Results</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-20 col-xl-15 text-center">
+                  <a href="/index_girl.html"  type="button" class="btn-icon-clipboard"  data-clipboard-text="air-baloon" title="Show Profile">
+                    <div>
+                      <img src="/static/assets/img/girl.png" class="col-center">
+                    </div>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-8">
+          <div class="card">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Basic Information</h3>
+                </div>
+                
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Feilds</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      Name
+                    </th>
+                    <td>
+                      Robbie Smith
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Address
+                    </th>
+                    <td>
+                      100 Main Street, Berkeley, CA, 94704
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Email
+                    </th>
+                    <td>
+                      may_smith@gmail.com
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Phone Number
+                    </th>
+                    <td>
+                      Not Entered
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Birthday
+                    </th>
+                    <td>
+                      3/4/2015
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Ethnic Background
+                    </th>
+                    <td>
+                      White
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Marital Status
+                    </th>
+                    <td>
+                      Single
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Language
+                    </th>
+                    <td>
+                      English
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Preview</h3>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Completion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      HepB
+                    </th>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">100%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      DTaP
+                    </th>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">100%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      IPV
+                    </th>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">100%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Varicella
+                    </th>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">100%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                
+                
+                  <tr>
+                    <th scope="row">
+                      MMR
+                    </th>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2"> 50%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% include "includes/footer.html" %}
+
+    </div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}
