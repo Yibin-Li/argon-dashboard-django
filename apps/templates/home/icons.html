@@ -113,11 +113,16 @@
             <div class="card-body">
               <div class="row icon-examples">
                 <div class="col-lg-3 col-md-6">
-                  <button type="button" class="btn-icon-clipboard" data-clipboard-text="active-40" title="Copy to clipboard">
+                  <button id="myButton" type="button" class="btn-icon-clipboard" data-clipboard-text="active-40" title="Copy to clipboard">
                     <div>
                       <i class="ni ni-active-40"></i>
                       <span>active-40</span>
                     </div>
+                    <script type="text/javascript">
+                        document.getElementById("myButton").onclick = function () {
+                            location.href = "tables.html";
+                        };
+                    </script>
                   </button>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -932,7 +937,7 @@
 
 {% endblock content %}
 
-<!-- Specific JS goes HERE --> 
+<!-- Specific JS goes HERE -->
 {% block javascripts %}
 
 <script src="/static/assets/vendor/clipboard/dist/clipboard.min.js"></script>
