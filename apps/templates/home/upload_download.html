@@ -1,0 +1,109 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Icons {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <!-- Card stats -->
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">Upload and Download File</h6>
+              <h3 class="mb-0">&nbsp</h3>
+              <!-- <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Tables</li>
+                </ol>
+              </nav> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt--7">
+
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+
+            <div class="card-header bg-transparent">
+              <h3 class="mb-0">Upload a file</h3>
+              <h3 class="mb-0">&nbsp</h3>
+              <h3 class="mb-0">&nbsp</h3>
+              <form class="box" method="post" action="" enctype="multipart/form-data">
+              <div class="box__input">
+                <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+              </div>
+              <!-- <div class="box__uploading">Uploading…</div>
+              <div class="box__success">Done!</div>
+              <div class="box__error">Error! <span></span>.</div> -->
+            </form>
+            <h3 class="mb-0">&nbsp</h3>
+            <h3 class="mb-0">&nbsp</h3>
+            <label for="file"><strong>File selected</strong><span class="box__dragndrop"></span>.</label>
+            <!-- <button class="box__button" type="submit">Upload</button> -->
+
+            <button id="button1" style="display:block;" onclick="document.getElementById('view_result').style.display = 'block'; this.style.display = 'none';">Upload</button>
+            <!-- <button id="button2" style="display:none;" onclick="document.getElementById('button1').style.display = 'block'; this.style.display = 'none';">Button 2</button> -->
+
+            <a style="display:none" id="view_result" href="immunization_2.html" class="btn btn-lg btn-neutral">View Result</a>
+            </div>
+            <div class="card-body">
+              <div class="row icon-examples">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+
+            <div class="card-header bg-transparent">
+              <h3 class="mb-0">Download sharable file</h3>
+              <h3 class="mb-0">&nbsp</h3>
+              <h3 class="mb-0">&nbsp</h3>
+              <form action="/action_page.php">
+                <label for="cars">Choose a kid's health record to download:</label>
+                <select name="person" id="person">
+                  <option value="Robbie">Robbie Smith</option>
+                  <option value="Emma">Emma Smith</option>
+                </select>
+                <br><br>
+              </form>
+
+            <a style="display:none" id="view_result" href="immunization_2.html" class="btn btn-lg btn-neutral">View Result</a>
+            <!-- <button id="button1" style="display:block;" onclick="document.getElementById('view_result').style.display = 'block'; this.style.display = 'none';">Download</button> -->
+            <a href="path_to_file" download="proposed_file_name">Download</a>
+            <h3 id="downloaded file"class="mb-0">Robbie Smith's health record has been downloaded!</h3>
+            </div>
+            <div class="card-body">
+              <div class="row icon-examples">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% include "includes/footer.html" %}
+
+    </div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %}
+
+<script src="/static/assets/vendor/clipboard/dist/clipboard.min.js"></script>
+
+{% endblock javascripts %}
